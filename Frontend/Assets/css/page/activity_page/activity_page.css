@@ -1,0 +1,1118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.div{
+    flex-direction: row;
+    display: flex;
+          cursor: pointer;
+
+
+}
+
+.Frame{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3vw;
+    background: #fffefe;
+    border-radius: 7px;
+    width: 315px;
+    cursor: pointer;
+
+
+}
+
+.pimgDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.text{
+    font-style: normal;
+    font-size: 15px;
+    font-family: 'BPG';
+          cursor: pointer;
+
+
+}
+
+.texti{
+    color: #3E4457;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: 'BPG';
+          cursor: pointer;
+
+
+}
+
+.texti1{
+    color: #3E4457;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: 'BPG';
+    margin-bottom: 10px;
+    cursor: pointer;
+
+
+}
+
+.textii{
+    color: #3E4457;
+    font-size: 15px;
+    font-family: 'BPG';
+    margin-left: 22px;
+       cursor: pointer;
+
+}
+
+.pimgDiv1{
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+       cursor: pointer;
+
+
+}
+
+.pimgDiv2{
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+.pimgDiv3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    cursor: pointer
+
+}
+
+.plusi{
+    margin-left: 10vw;
+}
+
+.pimgDiv4{
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.vol{
+    height: 20px;
+    cursor: pointer;
+
+}
+.frameDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+       cursor: pointer;
+
+}
+
+.div3{
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    margin-left: -10px;
+}
+
+.input{
+    width: 315px;
+    background: rgba(30, 136, 229, 0.1);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+
+}
+
+.voli{
+    position: absolute;
+    left: 18vw;
+    padding-top: 10px;
+    cursor: pointer;
+
+}
+
+.pimgDiv10{
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.texti2{
+    color: #3E4457;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: 'BPG';
+    margin-bottom: 2vw;
+    cursor: pointer;
+
+}
+
+.div5{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+
+.user{
+    background-color: #ffffff;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+       cursor: pointer;
+
+    width: 100%;
+    margin-left: 20px;
+}
+
+.User{
+    color: #3F53B7;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'BPG';
+    padding-left: 5px;
+       cursor: pointer;
+
+}
+
+.haurs{
+    color: #BEBEBE;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'BPG';
+    top: 48px;
+       cursor: pointer;
+
+}
+
+.time{
+    color: #3F53B7;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'BPG2';
+    padding-right: 10px;
+       cursor: pointer;
+
+}
+
+.divs{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+       cursor: pointer;
+
+}
+
+.paragrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 101%;
+    cursor: pointer;
+
+}
+
+.paragText{
+    color: #3E4457;
+    font-size: 15px;
+    line-height: 20px;
+    font-family:"BPG2";
+    cursor: pointer;
+
+}
+
+.eli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.surati{
+    padding-top: 10px;
+}
+
+.userparagrapclas{
+    color: #3E4457;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'BPG2';
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.uzerp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+
+.userComent{
+    color: #355376;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'BPG2';
+       cursor: pointer;
+
+}
+.answers {
+    padding-left:36px;
+}
+.twoDiv{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+       cursor: pointer;
+
+}
+
+.userdiv1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding-right: 17vw;
+    cursor: pointer;
+}
+
+.Feedback{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.likeButton{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.comentButton{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.shearButton{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.userDiv{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    padding-top: 3vw;
+    padding-left: 20px;
+}
+
+.userAdmin{
+    background-color: #F5F5F5;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.admintext{
+    color: #000000;
+    font-size: 18px;
+    line-height: 13px;
+    font-family: 'BPG';
+}
+
+.comment{
+    color: #3E4457;
+    font-size: 13px;
+    font-family: 'BPG2';
+    padding-left: 5px;
+}
+
+.comenDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding-left: 5vw;
+    padding-top: 10px;
+}
+
+.userLike{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'BPG2';
+}
+
+.administrator{
+    position: relative;
+}
+
+.inputi{
+    background: #F5F5F5;
+    border-radius: 26px;
+    border: none;
+    padding: 15px;
+    width: 73%;
+}
+
+.divs1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.imigDiv{
+    padding-right: 10px;
+}
+
+
+.buttonImg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 3vw;
+}
+
+.linesDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.lineclas{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 46%;
+    display: flex;
+}
+
+.dateTime{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'BPG2'; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dialogi{
+    border-radius: 7px;
+    display: flex;
+    height: auto;
+}
+
+.dialog-div {
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    height: auto;
+    padding: 10px;
+    margin-left: 10px;
+    width: 81vw;
+}
+.suratDiv1{
+    padding-top: 5vw;
+    padding-left: 1vw;
+}
+
+.surnameDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #F6F9FB;
+    height: auto;
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 7px;
+    position: relative;
+}
+.surname{
+    color: #3853AD;
+    font-size: 18px;
+    line-height: 15px;
+}
+
+.surati1 {
+    margin-right:10px;
+}
+.ask{
+    color: #2C3E50;
+    font-size: 12px;
+    line-height: 16px;
+    word-break: break-all;
+    font-family: 'BPG2';
+}
+
+.surname1{
+    padding-right: 6px;
+    color: #3853AD;
+    font-size: 14px;
+    font-family: 'BPG';
+}
+
+.surname1Div{
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.surname-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.timeDiv{
+    display: none;
+}
+
+.tupe{
+    display: none;
+} 
+
+.nameDiv{
+    display: flex;
+    background-color: white;
+    width: 78vw;
+    margin-left: 10px;
+    padding: 20px;
+    gap: 25px;
+    position: relative;
+    border-radius: 7px;
+    flex-wrap: wrap;
+}
+
+.serchdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 20vw;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.xazi{
+    width: 18px;
+    height: 0px;
+    border: 1px solid #1E88E5;
+    transform: rotate(90deg);
+}
+
+.creategrup{
+    background: #FFFFFF;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.fil{
+    margin-bottom: 10px;
+}
+
+.tupe{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.tupe{
+    display: none;
+}
+
+.picchersclas{
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: white;
+    padding: 15px;
+    height: 906px;
+}
+
+.filenameDiv1{
+    display: none;
+}
+
+.filenameDiv1{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.operatorDiv{
+    width: 437px;
+    height: 273px;
+    background-color: white;
+    padding: 15px;
+}
+
+.paragrap19{
+    color: #1E88E5;
+    font-size: 15px;
+    font-family: 'BPG';
+    padding-bottom: 15px;
+}
+
+.operatorDiv1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.checkDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 2vw;
+}
+
+
+.checkDivclas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 15px; 
+}
+
+.nameDiv2{
+    display: flex;
+    background-color: white;
+    margin-left: 10px;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+    border-radius: 7px;
+    flex-wrap: wrap;
+}
+
+
+.creatediv {
+    background-color: white;
+    flex-direction: column;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    height: 261px;
+    margin-left: 10px;
+}
+
+.createThink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+}
+
+.postParagrap{
+    color: #1E88E5;
+    font-size: 15px;
+    font-family: 'BPG';
+}
+
+.pliusImg{
+    background-color: rgba(137, 200, 255, 0.2);
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.pliusImgi{
+    background-color: rgba(137, 200, 255, 0.2);
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 35%;
+}
+
+.newsImg{
+    background-color: #89C8E4;
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 35%;
+}
+
+.think{
+    padding: 10px;
+}
+
+.thinkDiv{
+    border: 1px solid #CFCFCF;
+    height: 118px;
+    border-radius: 7px;
+}
+
+.WhatThink{
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+    gap: 11px;
+    height: 118px;
+}
+
+.watParagrap{
+    color: #000811;
+    font-size: 15px;
+    line-height: 16px;
+    font-family: 'BPG2';
+    border: none;
+    width: 98%;
+    margin-left: 10px;
+       cursor: pointer;
+
+}
+
+.initiatives{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    gap: 20px;
+    position: absolute;
+}
+
+.plusPost{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px;
+   
+}
+
+.watParagrap1{
+    color: #355376;
+    font-size: 15px;
+    line-height: 15px;
+    font-family: 'BPG';
+}
+
+.divImg3{
+    background-color: beige;
+    width: 36px;
+    height: 36px;
+    border-radius: 35%;
+    padding: 6px;
+}
+.createpostclass{
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 86%;
+    display: none;
+}
+
+.createpostc{
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 86%;
+    display: none;
+}
+
+.surveysclass{
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 86%;
+    display: none;
+}
+
+.newsclass{
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 86%;
+    /* display: flex; */
+}
+.newsclass{
+    display: none;
+}
+
+.divs2{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 11px;
+       cursor: pointer;
+
+}
+
+.buttonImgclass{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 1vw;
+}
+
+.uesAdmin{
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+
+.userimg{
+    width: 25px;
+    height: 25px;
+    background-color: #3FB969 10%;
+}
+
+
+.operatorclas{
+    background: #FFFFFF;
+    border-radius: 7px;
+    height: 262px;
+    padding: 10px;
+    position: relative;
+
+}
+
+.operatori{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.blockDiv1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 30px;
+    background-color: #F0F0F0;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.blockDiv4{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 109px;
+    background-color: #F0F0F0;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    gap: 5px;
+    flex-direction: row;
+}
+
+
+.inputBlockdiv{
+    margin-top: 15px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+.inputBlock {
+
+     border: 1px solid #CFCFCF;
+     height: 130px;
+     border-radius: 7px;
+     padding-left: 10px;
+     padding-bottom: 4vw;
+     color: currentColor;
+}
+
+.userBlovk{
+    color: #3F53B7;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: 'BPG';
+}
+
+.potoDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 22vw;
+    padding-top: 45px;
+    position: fixed;
+}
+
+.updatediv {
+    background-color: white;
+    flex-direction: column;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.update{
+    font-size: 17px;
+    line-height: 20px;
+    font-family: 'BPG2';
+    padding-top: 5px;
+}
+
+.updatecheck{
+    padding-left: 20px;
+}
+
+.initiativeUpdatec{
+    background-color: white;
+    flex-direction: column;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.grupDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+       cursor: pointer;
+
+    padding-top: 10px;
+}
+
+
+.term{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+       cursor: pointer;
+
+
+}
+
+.restsk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttonImg5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.Feedback5{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 15px;
+}
+
+.userBlock1{
+    color: #686868;
+    font-size: 10px;
+    font-family: 'BPG';
+    line-height: 11px;
+}
+
+.potodiv2{
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 34vw;
+    position: fixed;
+    cursor: pointer;
+}
+
+
+.addackclass{
+    background: #FFFFFF;
+    border-radius: 7px;
+    height: 547px;
+    padding: 10px;
+    position: relative; 
+    cursor: pointer;
+}
+
+.operatori2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.likeupdateclas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 45px;    
+    gap: 10px;
+    cursor: pointer;
+}
+
+.inputupdateDiv{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.inputupdateclass{
+    border: 1px solid rgba(207, 207, 207, 0.5);
+    border-radius: 7px;
+    padding: 18px;
+    cursor: pointer;
+}
+
+
+.inputupdateclas{
+    border: 1px solid rgba(207, 207, 207, 0.5);
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.addAnserclas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    padding-top: 1vw;
+    cursor: pointer;
+}
+
+.anserwclas{
+    color: #1E88E5;
+    font-family: 'BPG2';
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.inputText{
+    color: #3E4457;
+    font-size: 12px;
+    font-family: 'BPG';
+    cursor: pointer;
+}
+
+.resultclas{
+    padding-top: 15px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.inicidivImgclas{
+    background-color: rgb(2 86 74 / 24%); 
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.initiativeclas{
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 86%;
+    display: none;
+}
+
+.inputtestclas{
+    padding-top: 10px;
+    font-family: 'BPG';
+    display: none;
+}
+
+.userLike:hover{
+    color: #000000;
+}
+
+.plusPost:hover{
+    background-color:#1E88E5;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.watParagrap1:hover{
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+section[notFound]{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    font-family: 'BPG';
+    font-size: xxx-large;
+    color: #b2b2b8;
+    margin-top: 50px;
+}

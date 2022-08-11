@@ -1,0 +1,20 @@
+section[Thirty_sec] {
+    background-color: var(--block-bg-color);
+    padding: 10px;
+    border-radius: 7px;
+    min-width: 200px;
+}
+
+thirtySec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thirtySec-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

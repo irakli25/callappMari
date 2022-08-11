@@ -1,0 +1,848 @@
+section[header] {
+    background-color: var(--white);
+    height: 60px;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 3%);
+    display: grid;
+    align-items: center;
+    padding: 0px 9px 0px 25px;
+    box-sizing: border-box;
+    min-width: 200px;
+    z-index: 4;
+    grid-template-columns: 115px 24px auto;
+}
+
+section[header]>logo[callapp]::after {
+    content: "";
+    background: url("../../images/callapp.svg") no-repeat center;
+    background-size: 100%;
+    height: 35px;
+    width: 112px;
+    display: block;
+    cursor: pointer;
+}
+
+section[header]>interface[user]>drop>content>.webchat-icon {
+    height: 24px;
+    width: 24px;
+    background: url(../../images/icons/sendmessage.svg) no-repeat;
+    position: absolute;
+    bottom: 8px;
+}
+
+
+section[header]>interface[user] {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 40px auto;
+    grid-gap: 10px;
+    height: 42px;
+    place-items: flex-start;
+    user-select: none;
+    justify-self: end;
+}
+
+
+section[header]>interface[user]>drop {
+    position: relative;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 42px auto;
+    cursor: pointer;
+    margin-right: 1px;
+}
+
+section[header]>interface[user]>drop>content {
+    transition: 0.3s;
+    padding: 6px 20px;
+}
+
+section[header]>interface[user]>drop>content:hover menu>.menuheader div:first-child>span[name=username] {
+    color: var(--sky);
+}
+
+
+section[header]>interface[user]>drop>hidecontent {
+    width: 210px;
+    position: absolute;
+    top: 61px;
+    background-color: var(--block-bg-color);
+    border-radius: 4px;
+    margin-right: 0px;
+    font-size: 11px;
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.08));
+    display: none;
+}
+
+section[header]>interface[user]>drop icon:hover {
+    cursor: pointer;
+}
+
+section[header]>interface[user]>drop icon[name=webChat] {
+    fill: none
+}
+
+section[header]>interface[user]>drop icon[name=webChat]:hover {
+    --stroke-dark: #fc54b0;
+    fill: #fc54b05f
+}
+
+
+
+section[header]>interface[user]>drop icon[name=notification][aria-new=true]::after {
+    content: '';
+    background-color: #FD0A50;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    right: 7px;
+    top: 5px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+section[header]>interface[user]>drop menu {
+    display: grid;
+    grid-auto-flow: row;
+    font-size: 12px;
+    font-family: 'BPG';
+    grid-gap: 10px;
+    place-items: center;
+    grid-template-columns: auto;
+}
+
+section[header]>interface[user]>drop menu>.menuheader {
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 12px;
+    font-family: 'BPG';
+    grid-gap: 10px;
+    place-items: center;
+    grid-template-columns: auto 35px;
+}
+
+section[header]>interface[user]>drop menu>.menuheader::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    display: grid;
+    place-content: center;
+    width: 16px;
+    height: 16px;
+    transition: var(--transition);
+    font-size: 13px;
+}
+
+section[header]>interface[user] menu[aria-open=false]>.menuheader::after {
+    content: "\f078";
+}
+
+section[header]>interface[user] menu[aria-open=true]>.menuheader::after {
+    content: "\f077";
+}
+
+section[header]>interface[user]>drop menu>.menuheader div:first-child {
+    grid-auto-flow: row;
+    display: grid;
+}
+
+section[header]>interface[user]>drop menu>.menuheader div:first-child>span[name=username] {
+    font-size: 12px;
+}
+
+section[header]>interface[user]>drop menu>.menuheader div:first-child>span[name=status] {
+    font-size: 10px;
+    text-align: right;
+    font-family: "BPG2";
+    color: #9C9C9C;
+}
+
+section[header]>interface[user]>drop menu>.menuheader div[name=photo] {
+    position: relative;
+    overflow: hidden;
+    border-radius: 22px;
+    width: 35px;
+    height: 35px;
+}
+
+section[header]>interface[user]>drop menu>.menuheader div[name=photo] img {
+    width: 100%;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.notificationtable {
+    height: 412px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 5px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.notificationtable>.notificationtable-grid>.notificationtbl {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr 1fr;
+    grid-gap: 3px;
+    background: var(--chat-msg);
+    margin-bottom: 10px;
+    margin-right: 9px;
+    margin-top: 2px;
+    margin-left: 5px;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.notificationtable>.notificationtable-grid>.notificationtbl>.tbl-content1 {
+    width: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.notificationtable>.notificationtable-grid>.notificationtbl>.tbl-content2 {
+    width: 274px;
+    line-height: 20px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.notificationtable>.notificationtable-grid>.notificationtbl>.tbl-content2>h3 {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--dark-sky);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.notificationtable>.notificationtable-grid>.notificationtbl>.tbl-content2>p {
+
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--dark-sky);
+}
+
+
+section[header]>interface[user]>drop>hidecontent>div>.notificationtable>.notificationtable-grid>.notificationtbl>.tbl-content3 {
+    width: 48px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.notificationtable>.notificationtable-grid>.notificationtbl>.tbl-content3>p {
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--dark-sky);
+    margin-top: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.notificationtable>.notificationtable-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.notificationtable>.notificationtable-btn>button {
+    background: var(--chat-msg);
+    color: var(--dark-sky);
+    font-family: 'BPG2';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    width: 120px;
+    height: 24px;
+    padding: 5px 10px;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: relative;
+    bottom: 8px;
+    left: 178px;
+    border-bottom: 8px solid var(--white);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat {
+    display: none;
+    position: relative;
+    bottom: 688px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 30px;
+    padding: 18px;
+    background: var(--chat-msg);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-grid>img {
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-grid>div>h3 {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--dark-sky);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-grid>div>p {
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: #9C9C9C;
+    display: flex;
+    align-self: center;
+    margin-top: 5px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-grid>div>p>.operator-img {
+    display: flex;
+    align-self: center;
+    margin-left: 5px;
+}
+
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent {
+    height: 680px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.grid>h4 {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 10px;
+    color: var(--dark-sky);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.grid>h5 {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--dark-sky);
+    margin-left: 80px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.grid>h5>img {
+    position: relative;
+    top: 3px;
+    margin-left: 4px;
+    filter: var(--icon-color);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat,
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat {
+    position: relative;
+    bottom: 672px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>.gobackbutton,
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>.gobackbutton {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    grid-gap: 5px;
+    margin-left: 5px;
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--dark-sky);
+    cursor: pointer;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>.gobackbutton>div>img {
+    margin-right: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.grid>h5>.createnewchat {
+    display: none;
+    grid-auto-flow: column;
+    position: absolute;
+    height: 49px;
+    width: 126px;
+    padding: 15px;
+    margin-left: -70px;
+    margin-top: 5px;
+    background: var(--white);
+    border-radius: 4px;
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.08));
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.grid>h5>.createnewchat>.createnewchat-grid {
+    line-height: 24px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts {
+    margin-top: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>img,
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>.active-contacts>img,
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>.active-contacts>img {
+    padding: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>div>div>.privatechat-input,
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>div>div>.groupchat-input,
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>div>div>.groupchatinput {
+    background: rgba(30, 136, 229, 0.1);
+    border-radius: 4px;
+    border: none;
+    width: 320px;
+    padding: 7px;
+    height: 27px;
+    color: var(--dark-sky);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>div>div>.privatechat-input-img {
+    position: absolute;
+    left: 315px;
+    bottom: 401px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>div>.creategroupchat-grid,
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>div>.creategroupchat-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr 1fr;
+    background: rgba(30, 136, 229, 0.1);
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    grid-gap: 14px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>div>.creategroupchat-grid>p {
+    font-family: 'BPG';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--dark-sky);
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>div>.creategroupchat-grid>img {
+    cursor: pointer;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>div>.reccomended,
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>div>.reccomended {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>div>.reccomended>.reccomended-users>.privatechat-users,
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>div>.reccomended-users>.groupchat-users {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    grid-gap: 12px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>div>.reccomended-users>.groupchat-users>input {
+    position: absolute;
+    left: 315px;
+    margin-top: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>div>.reccomended>.reccomended-users>.privatechat-users>p,
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>div>.reccomended-users>.groupchat-users>p {
+    font-family: "BPG";
+    display: flex;
+    font-style: normal;
+    align-items: center;
+    font-weight: normal;
+    font-size: 12px;
+    width: 254px;
+    line-height: 46px;
+    color: var(--dark-sky);
+    border-bottom: 1px solid rgba(226, 226, 226, 0.5);
+    cursor: pointer;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>div>.reccomended>.reccomended-users>.privatechat-users>img,
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>div>.reccomended-users>.groupchat-users>img {
+    width: 42px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.privateChatCreate>.create-new-private-chat>div>.reccomended>.reccomended-users {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--dark-sky);
+    margin-bottom: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.groupChatCreate>.create-new-group-chat>div>.reccomended-users {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--dark-sky);
+    margin: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #08141D;
+}
+
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>.chat-groups {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #08141D;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>div>.chat-message-content {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr 1fr;
+    grid-gap: 10px;
+    background: var(--chat-msg);
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 312px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>h4 {
+    margin: 10px;
+    cursor: pointer;
+    color: var(--dark-sky);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>h4>img {
+    margin-left: 10px;
+    top: 1px;
+    position: relative;
+    filter: var(--icon-color);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>.chat-groups>h4 {
+    margin: 10px;
+    cursor: pointer;
+    color: var(--dark-sky);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>.chat-groups>h4>img {
+    margin-left: 10px;
+    top: 1px;
+    position: relative;
+    filter: var(--icon-color);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>div>.chat-message-content>.chat-msg1>img,
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>div>.chat-message-content>.chat-msg2>img,
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>div>.chat-message-content>.chat-msg3>img {
+    width: 42px;
+    height: 42px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>img {
+    width: 26px;
+    height: 26px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>div>.chat-message-content>.chat-msg2>h3 {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--dark-sky);
+    margin-bottom: 3px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>div>.chat-message-content>.chat-msg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>div>.chat-message-content>.chat-msg2 {
+    width: 194px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>div>.chat-message-content>.chat-msg2>p {
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: var(--dark-sky);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>div>.chat-message-content>.chat-msg3>p {
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: var(--dark-sky);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>.chat-groups>div>.chat-group-content {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr 1fr;
+    grid-gap: 10px;
+    background: var(--chat-msg);
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 312px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>.chat-groups>div>.chat-group-content>.group-msg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>.chat-groups>div>.chat-group-content>.group-msg2 {
+    width: 200px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>.chat-groups>div>.chat-group-content>.group-msg2>h3 {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--dark-sky);
+    margin-bottom: 3px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>.chat-groups>div>.chat-group-content>.group-msg2>p {
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: var(--dark-sky);
+    width: 225px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.chatcontent>.chat>.active-contacts>.chat-content>.chat-groups>div>.chat-group-content>.group-msg3>p {
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: var(--dark-sky);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.openchat-content {
+    height: 576px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.openchat-content>.user-msg-grid {
+    display: grid;
+    width: 322px;
+    grid-auto-flow: column;
+    padding: 16px;
+    grid-template-columns: 1fr;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.openchat-content>.user-msg-grid2 {
+    display: grid;
+    width: 328px;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.openchat-content>.user-msg-grid>.sentMessage {
+    margin-right: 178px;
+    padding: 9px;
+    margin-left: 20px;
+    background: var(--sent-msg);
+    border-radius: 3px;
+    width: 130px;
+    height: auto;
+    z-index: 10;
+    font-family: "BPG2";
+}
+
+.arrow-right {
+    width: 0;
+    position: absolute;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 9px solid var(--sent-msg2);
+    margin-top: 5px;
+    margin-left: 282px;
+}
+
+.arrow-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-right: 9px solid var(--sent-msg);
+    margin-left: 37px;
+    margin-top: 4px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.openchat-content>.user-msg-grid2>.sentMessage2 {
+    margin-left: 51px;
+    padding: 9px;
+    background: var(--sent-msg2);
+    border-radius: 3px;
+    z-index: 10;
+    width: 213px;
+    height: auto;
+    font-family: "BPG2";
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.openchat-content>.user-msg-grid2>img {
+    margin-left: 20px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-send-message>div {
+    display: grid;
+    grid-auto-flow: column;
+    background: var(--chat-msg);
+    width: 354px;
+    height: 55px;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-send-message>div>span>.smile {
+    margin-top: 15px;
+    filter: var(--icon-color);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-send-message>div>.open-chat-border {
+    border-left: 1px solid var(--dark-sky);
+    margin-top: 10px;
+    height: 38px;
+    margin-left: 49px;
+    position: absolute;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-send-message>div>input {
+    width: 250px;
+    margin-top: 4px;
+    height: 46px;
+    background: var(--chat-msg);
+    border: none;
+    margin-left: 2px;
+    color: var(--dark-sky);
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-send-message>div>input::placeholder {
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: var(--dark-sky);
+    font-weight: bold;
+}
+
+section[header]>interface[user]>drop>hidecontent>div>.openchat>.open-chat-send-message>div>img {
+    margin-top: 12px;
+    padding: 6px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.languageDiv,
+.languageDiv2 {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.languageDiv2 {
+    gap: 15px;
+}
+
+.lang-title {
+    font-family: "BPG";
+    font-weight: normal;
+    font-size: 11px;
+    color: var(--dark-sky);
+}
+
+.languageDiv2 > h2:hover {
+    color: rgb(30, 136, 229);
+}
+
+@media only screen and (max-width: 590px) {  
+    .callapp_username,
+    .callapp_status {
+        display: none;
+    }
+
+    .hidecontent1 {
+        right: 6px;
+    }
+
+    .languageContent {
+        display: none;
+    }
+
+    hidecontent {
+        right: -77px;
+    }
+
+    .arrow-up {
+        left: 361px !important;
+    }
+
+    logo {
+        margin-left: 40px;
+    }
+
+    section[header]>interface[user]>drop>content {
+        padding: 6px 2px;
+    }
+
+    section[header]>interface[user]>drop>content>icon[name="notification"] {
+        margin-right: -15px;
+    }
+
+}
+
+.languageContent {
+    display: none;
+}

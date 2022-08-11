@@ -1,0 +1,16 @@
+/**
+
+    FILTER 
+
+**/
+
+filterblock {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--block-bg-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    gap: 20px;
+    align-items: center;
+}

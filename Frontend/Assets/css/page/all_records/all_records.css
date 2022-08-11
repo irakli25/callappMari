@@ -1,0 +1,39 @@
+section[all_records] {
+    min-width: 200px;
+}
+
+recordsblock,
+tableblock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 7px;
+    background: var(--block-bg-color);
+    padding: 10px;
+    min-width: 200px;
+}
+
+tableblock {
+    margin-top: 10px;
+}
+
+tableblock > .k-grid.k-grid-display-block {
+    margin-top: 0;
+}
+
+.table-download-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-download-btn > player {
+    cursor: pointer;
+}
+
+.download-ico-txt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}

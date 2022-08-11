@@ -1,0 +1,155 @@
+
+interface[incomming] {
+    display: grid;
+    height: 100%;
+    grid-auto-flow: column dense;
+    grid-template-columns: auto auto 1fr;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    gap: 10px;
+    overflow: hidden;
+}
+
+section[incomming] > filterblock {
+    margin-bottom: -8px;
+}
+
+.divfortable,
+.divforbtn {
+    background: var(--block-bg-color);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.divforbtn {
+    border-radius: 7px 7px 0 0;
+}
+
+.divfortable {
+    padding-bottom: 10px;
+    border-radius: 0 0 7px 7px;
+}
+
+
+
+
+
+.k-multiselect {
+    width: auto;
+    max-width: 385px;
+    min-width: 200px;
+    font-size: 12px;
+    font-family: 'BPG2';
+    border-radius: 5px;
+    resize: none;
+    max-height: 36px;
+
+    border: 1px solid #1E88E5;
+}
+
+.k-multiselect .k-multiselect-wrap {
+    border: none;
+    background: url("../../../images/icons/Vector333.svg") no-repeat 175px;
+}
+
+.k-multiselect::after {
+    color: #1E88E5;
+    content: attr(title);
+    position: absolute;
+    left: 10px;
+    top: -7px;
+    font-family: 'BPG';
+    font-size: 11px;
+    background-color: var(--block-bg-color);
+    padding: 0 6px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.k-dropdowntree .k-multiselect-wrap .k-clear-value, .k-multiselect .k-multiselect-wrap .k-clear-value {
+    display: none;
+}
+
+
+section[incomming] .k-grid.k-grid-display-block {
+    max-width: calc(100vw - 172px);
+}
+
+#mosmena_gadmowera{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+player{
+    cursor:pointer;
+}
+
+
+
+
+/* AUTOCOMPLETE */
+
+/* .ac_results {
+	padding: 0px;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+    border-radius: 4px;
+    width: 360px !important;
+    font-family: 'BPG2';
+    box-shadow: 0px -1px 16px -11px #000;
+} */
+
+ ul.ui-autocomplete {
+	overflow: auto;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    max-height: 83px !important;
+	background-color: white;
+    font-family: 'BPG2';
+    box-shadow: 0px -1px 16px -11px #000;
+    width: 360px !important;
+    border-radius: 4px;
+    height: 200px;
+}
+
+ul.ui-autocomplete li {
+	margin: 0px;
+    padding: 4px 12px;
+	cursor: default;
+	display: block;
+	font-size: 12px;
+	line-height: 16px;
+	overflow: hidden;
+    opacity: 0.8;
+}
+
+ul.ui-autocomplete li:hover {
+    background-color:transparent;
+    color:#1E88E5;
+    opacity: 1;
+}
+
+/* .ac_over {
+    cursor: pointer;
+	background-color:transparent;
+    color:#1E88E5;
+    opacity: 1;
+} */
+/* .overflow-tip{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.tooltiptext {
+    position:relative;
+    padding:5px;
+} */
+
+field[title="forward"]::after{
+    width:58px;
+}

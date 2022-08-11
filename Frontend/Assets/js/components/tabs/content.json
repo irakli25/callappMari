@@ -1,0 +1,22 @@
+[
+       {
+          "value":"უშინაარსო ტექსტი",
+          "content_id": "text"
+       },
+       {
+          "value":"საბეჭდი",
+          "content_id": "print"
+       },
+       {
+          "value":"განსაკუთრებული",
+          "content_id": "special"
+       },
+       {
+        "value":"სხვადასხვა ვერსიები იყო ჩაშენებული",
+        "content_id": "build"
+       },
+       {
+        "value":"შეცდომის გამო",
+        "content_id": "error"
+        }
+    ]

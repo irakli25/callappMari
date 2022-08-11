@@ -1,0 +1,25 @@
+/* section[ServiceCenterStatus114] {
+    background-color: var(--block-bg-color);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+section[ServiceCenterStatus114] button[type="add"] {
+    margin-right: 20px;
+}
+
+section[ServiceCenterStatus114] button {
+    margin-bottom: 10px;
+}
+
+.service-center-modal {
+    height: 100%;
+    display: flex;
+}
+
+.service-center-modal > field {
+    margin-top: 10px;
+    margin-left: 30%;
+} */
+
+@import url('../../component/handbook.css');

@@ -1,0 +1,3 @@
+section[outgoing] .k-grid.k-grid-display-block {
+    max-width: calc(100vw - 172px);
+}

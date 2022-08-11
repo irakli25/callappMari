@@ -1,0 +1,122 @@
+@import "./task.modal.css";
+
+taskTabs{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--block-bg-color);
+    padding: 3px 20px 0px 20px;
+    border-radius: 7px;
+    align-items: center;
+}
+
+tab{
+    color: #A1ACB3;
+    font-family: 'BPG';
+    font-size: 12px;
+    line-height: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+tab:hover{
+    color: #1E88E5;
+}
+
+.active{
+    color: #1E88E5;
+    border-bottom: 2px solid #1E88E5;
+}
+
+taskTabsSec {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    border-radius: 7px;
+    gap: 23px;
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+tabSec{
+    font-family: 'BPG';
+    font-size: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 9px 23px;
+    color: #97A2A8;
+}
+
+tabSec:hover{
+    color: #1E88E5;
+}
+
+.activeSec{
+    border-radius: 49px;
+    background: #1E88E5;
+    color: white;
+}
+
+.activeSec:hover{
+    color: white;
+}
+
+taskContent{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--block-bg-color);
+    padding: 10px;
+    border-radius: 7px;
+    flex-direction: column;
+}
+
+section[task]{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+taskFilter{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 10px 0px 0px;
+    border-radius: 7px;
+    gap: 20px;
+    align-items: center;
+}
+
+taskButtons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    gap: 20px;
+    align-items: center;
+}
+
+.stbtn{
+    background:#E6981E;
+}
+
+.stbtn:hover{
+    background:#db8801;
+}
+
+.delbtn{
+    background:#FD0A50;
+}
+
+.delbtn:hover{
+    background:#e20040;
+}
+
+section[task] .k-grid.k-grid-display-block {
+    max-width: calc(100vw - 171px);
+}
+
+
+.k-multiselect[title="განყოფილება"] {
+    max-width: 490px;
+}

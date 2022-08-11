@@ -1,0 +1,53 @@
+section[ServiceCenterGroup114] {
+    background-color: var(--block-bg-color);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+section[ServiceCenterGroup114] button[type="add"] {
+    margin-right: 20px;
+}
+
+section[ServiceCenterGroup114] button {
+    margin-bottom: 10px;
+}
+
+.service-center-group114-modal {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.master-div {
+    border-radius: 7px;
+    background-color: var(--block-bg-color);
+    padding: 10px;
+}
+
+.input-div {
+    background-color: var(--block-bg-color);
+}
+
+.input-div > div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.master-div > button {
+    margin-bottom: 10px;
+}
+
+.master-div > button[type="add"] {
+    margin-right: 20px;
+}
+
+.create-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--block-bg-color);
+    height: 100%;
+    gap: 20px;
+}

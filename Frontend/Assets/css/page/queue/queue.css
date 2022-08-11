@@ -1,0 +1,87 @@
+section[queue] {
+    min-width: 200px;
+}
+
+.btn {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+
+.creatediv {
+    background: var(--block-bg-color);
+    border-radius: 7px;
+    padding: 20px;
+}
+
+dialogcontent {
+    font-family: "BPG";
+    font-weight: normal;
+    font-size: 15px;
+    color: #1E88E5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.jBox-Modal .jBox-container .jBox-content {
+    background: var(--block-bg-color);
+    border-radius: 7px;
+}
+
+.uploadbtn {
+    margin: 10px;
+    color: #3E4457;
+    background-color: #F5F5F5;
+    font-family: "BPG2";
+    font-size: 12px;
+    width: 216px;
+    height: 36px;
+}
+
+.uploadbtn:hover {
+    background-color: #dbdada;
+}
+
+modal-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+modal-div > .k-dropdown {
+    border: 1px solid #1E88E5;
+    max-width: 200px;
+    color: #1E88E5;
+    width: 216px;
+}
+
+.k-dropdown .k-dropdown-wrap {
+    background: transparent;
+}
+
+.k-dropdown .k-dropdown-wrap .k-select {
+    background: url(../../../images/icons/Vector333.svg) no-repeat 0.5px;
+}
+
+
+.k-input::after {
+    color: #1E88E5;
+    content: attr(title);
+    position: absolute;
+    left: 10px;
+    top: -7px;
+    font-family: 'BPG';
+    font-size: 11px;
+    background-color: var(--block-bg-color);
+    padding: 0 6px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+.k-input {
+    color: #1E88E5;
+}

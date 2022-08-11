@@ -1,0 +1,11 @@
+@import url('../../component/handbook.css');
+
+fieldset{
+    padding: 10px;
+}
+
+section[automator] > .title {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}

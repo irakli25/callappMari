@@ -1,0 +1,20 @@
+section[Transfer_chat_report] {
+    background-color: var(--block-bg-color);
+    padding: 10px;
+    border-radius: 7px;
+    min-width: 200px;
+}
+
+transferChat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.transferChat-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,1 @@
+<section activity_page></section>

@@ -1,0 +1,364 @@
+/* 
+/* IMPORT FONTS */
+@import "../../fonts/fonts.css";
+
+@import "../../utils/color.css";
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background: rgba(21, 34, 44);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+input:focus, input:active{
+    outline: none;
+}
+
+section[Authorization] {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+interface[auth] {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 60px;
+    height: 96vh;
+    justify-content: center;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+interface[auth] > div[right] > div[gobackbutton]  {
+    position: relative;
+    top: -10rem;
+    margin-bottom: -10rem;
+    background: url("../../../images/icons/Arrow.svg") no-repeat;
+}
+
+interface[auth] > div[right] > div[gobackbutton] > a[goback] {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "BPG";
+    font-size: 15px;
+}
+
+interface[auth] > div[left] {
+    width: 438px;
+}
+
+interface[auth] > div[left] > logo[callapp]::after {
+    content: "";
+    background: url("../../../images/callapp2.svg") no-repeat center;
+    background-size: 100%;
+    height: 200px;
+    width: 438px;
+    display: block;
+    padding-top: 38px;
+    animation: 1s ease opacity;
+}
+
+interface[auth] > div[border] {
+    border: 1px solid #5FB2FF;
+    height: 578px;
+}
+
+@media screen and (max-width: 1096px) {
+    interface[auth] > div[border] {
+        display: none;
+    } 
+
+    interface[auth] {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fill, minmax(398px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(280px, 1fr));
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+    }
+}
+
+
+interface[auth] > div[right] {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 25px;
+    width: 438px;
+    animation: 1s ease slide;
+    position: relative;
+}
+
+interface[auth] > div[right] > .auth-title {
+    font-family: "BPG";
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+interface[auth] > div[right] > info[infoicon],
+interface[auth] > div[right] > smsinfo[smsinfoicon] {
+    position: absolute;
+}
+
+interface[auth] > div[right] > icon[eyeicon] {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background: url("../../../images/icons/eye.svg") no-repeat right;
+    left: 398px;
+    bottom: 200px;
+    cursor: pointer;
+}
+
+interface[auth] > div[right] > info[infoicon]::after {
+    position: relative;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+    left: 412px;
+    top: 210px;
+    background: url("../../../images/icons/info.svg") no-repeat left;
+    bottom: 10.7rem;
+}
+
+interface[auth] > div[right] > info[infoicon] > span,
+interface[auth] > div[right] > smsinfo[smsinfoicon] > span {
+    display: none;
+}
+
+interface[auth] > div[right] > info[infoicon]:hover > span,
+interface[auth] > div[right] > smsinfo[smsinfoicon]:hover > span {
+    opacity: 1;
+    z-index: 1;
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    top: 224px;
+    left: 140px;
+    width: 265px;
+    position: absolute;
+    background: #1a2a36;
+    color: #fff;
+    padding: 8px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+interface[auth] > div[right] > smsinfo[smsinfoicon]::after {
+    position: relative;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+    left: 418px;
+    top: 90px;
+    background: url("../../../images/icons/info.svg") no-repeat left;
+    bottom: 10.7rem;
+}
+
+interface[auth] > div[right] >  span > span  {
+    width: 100%;
+    height: 48px;
+    padding: 5px 12px;
+    color: #fff;
+    border: 0.5px solid #5FB2FF;
+    outline: none;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+interface[auth] > div[right] >  span > span > span {
+    font-size: 15px;
+    font-family: "BPG";
+}
+
+interface[auth] > div[right] >  span {
+    background: #15222C;
+    border: none;
+}
+
+interface[auth] > div[right] >  span > span > .k-input {
+    height: calc(1.428571em + 14px);
+}
+
+interface[auth] > div[right] >  span > span:active {
+    background-color: transparent;
+}
+
+interface[auth] > div[right] >  span > span:hover {
+    background-color: rgb(29, 47, 61);
+}
+
+interface[auth] > div[right] > div {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-content: space-between;
+}
+
+interface[auth] > div[right] > div > label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "BPG2";
+}
+
+interface[auth] > div[right] > div > a {
+    color: #5FB2FF;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: "BPG2";
+    text-decoration: underline;
+}
+
+interface[auth] > div[right] > field > .username-input,
+interface[auth] > div[right] > field > .password-input {
+    position: relative;
+    padding: 14px 18px;
+    width: 100%;
+    color: #fff;
+    border: 1px solid #5FB2FF;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+    font-family: "BPG";
+}
+
+interface[auth] > div[right] > div[inputwithlabels] {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 40px;
+    color: #fff;
+}
+
+interface[auth] > div[right] > field > .username-input:focus,
+interface[auth] > div[right] > field > .password-input:focus{
+    border: 0.5px solid #FD0A50;
+}
+
+interface[auth] > div[right] > field > .username-input:focus::placeholder,
+interface[auth] > div[right] > field > .password-input:focus::placeholder {
+    color: transparent;
+}
+
+interface[auth] > div[right] > field > .username-input::placeholder,
+interface[auth] > div[right] > field > .password-input::placeholder {
+    color: #e8e4e4;
+}
+
+interface[auth] > div[right] > button {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background: #FD0A50;
+    font-size: 15px;
+    font-family: "BPG";
+    cursor: pointer;
+}
+
+interface[auth] > div[right] > button:active {
+    transform: translateY(1px);  
+}
+
+
+@keyframes slide {
+    0% {
+      transform: translateY(20%);
+
+      opacity: 0%;
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes opacity {
+    0% {
+      opacity: 0%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+}
+
+callback {
+    font-family: "BPG2";
+    font-size: 12px;
+    color: #FD0A50;
+}
+
+
+rembo {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 70px solid red;
+    position: relative;
+    top: -50px;
+}
+
+rembo:after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 70px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid red;
+} 
+
+@media screen and (max-width: 490px) {
+    interface[auth] {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 80vh;
+    }
+
+    interface[auth] > div[right] {
+        width: 260px;
+        margin-left: -60px;
+    }
+
+    interface[auth] > div[right] > icon[eyeicon] {
+        left: 286px;
+    }
+
+    interface[auth] > div[left] > logo[callapp]::after {
+        width: 250px;
+        margin-left: 106px;
+        height: 100px;
+    }
+
+    interface[auth] > div[right] > .auth-title {
+        margin-left: 72px;
+    }
+
+    interface[auth] > div[right] > span > span {
+        width: 281px;
+    }
+
+    interface[auth] > div[right] > info[infoicon]::after {
+        margin-left: -117px;
+    }
+
+    interface[auth] > div[right] > field > .username-input, interface[auth] > div[right] > field > .password-input {
+        width: 320px;
+    }
+
+    interface[auth] > div[right] > button {
+        width: 320px;
+    }
+} 

@@ -1,0 +1,117 @@
+.spinner {
+    display: none;
+}
+
+.userManagerDiv {
+    background: var(--block-bg-color);
+    min-width: 200px;
+    height: 80%;
+    border-radius: 0 0 7px 7px;
+}
+
+.current,
+.archive {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.archive {
+    display: flex;
+    padding: 10px;
+}
+
+.buttondiv,
+.archivebuttondiv {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.infomodal,
+.usermodal,
+.picturemodal {
+    background: var(--block-bg-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.title {
+    font-family: "BPG";
+    font-size: 15px;
+    color: #1E88E5;
+    background: var(--block-bg-color);
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+field > input {
+    /* width: 177px; */
+    width: 200px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+.k-multiselect {
+    width: 222px;
+}
+
+.k-multiselect .k-multiselect-wrap {
+    border: none;
+    background-position: 196.5px;
+}
+
+.remark-input {
+    border: 1px solid;
+    border-color: revert;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: 'BPG2';
+    font-size: 12px;
+    background-color: var(--block-bg-color);
+    color: var(--text-color);
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    resize: none;
+    width: 949px;
+    height: 100px;
+}
+
+.uploadbtn {
+    margin: 10px;
+    color: var(--dark-sky);
+    background-color: var(--kendo-selector-bg);
+}
+
+.uploadbtn:hover {
+    background-color: var(--kendo-selector-hover);
+}
+
+.current,
+.archive {
+    margin-top: 10px;
+}
+
+section[usermanager] .k-grid.k-grid-display-block {
+    max-width: calc(100vw - 100px);
+}
+
+.render-img {
+    margin-left: 10px;
+}
+
+.render-img > img {
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+    object-fit: cover;
+}

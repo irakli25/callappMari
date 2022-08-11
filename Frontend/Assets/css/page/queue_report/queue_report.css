@@ -1,0 +1,20 @@
+section[Queue_report] {
+    background-color: var(--block-bg-color);
+    padding: 10px;
+    border-radius: 7px;
+    min-width: 200px;
+}
+
+queueReport {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.queueReport-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

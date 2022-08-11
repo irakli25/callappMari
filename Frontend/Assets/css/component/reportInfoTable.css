@@ -1,0 +1,44 @@
+div[mainDiv] {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 467px;
+    border: 1px solid #B1BAD7;
+}
+
+div[mainDiv] > div {
+    display: flex;
+}
+
+fieldname {
+    font-family: "BPG2";
+    font-size: 12px;
+    text-align: end;
+    max-width: 500px;
+    width: 470px;
+    padding: 10px;
+    color: var(--reportinfo-table-color);
+    background: var(--reportinfo-table-bg);
+    border-bottom: 1px solid #B1BAD7;
+    border-right: 1px solid #B1BAD7;
+}
+
+fielddata {
+    padding: 10px;
+    font-size: 12px;
+    font-family: "BPG2";
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: var(--reportinfo-table-color2);
+    background: var(--reportinfo-table-bg);
+    border-bottom: 1px solid #B1BAD7;
+}
+
+div[mainDiv] > div:last-child > fieldname, div[mainDiv] > div:last-child >  fielddata {
+    border-bottom: none;
+}
+
+h1[title] {
+    font-weight: normal;
+}

@@ -1,0 +1,77 @@
+:root {
+    --white: #FFF;
+    --dashboard-bg-color: #F7F6FF;
+    --block-bg-color: #FFF;
+    --text-color: #404040;
+    --textcolor: #2C3E50;
+    --gray: #444444;
+    --green: #02BB62;
+    --green2: #3fb969;
+    --green3: #56c695;
+    --pink: #FF005C;
+    --red: #ff0037;
+    --orange: #FEB019;
+    --dark-sky: #0d1340;
+    --sky: #1E88E5;
+    --light-sky: #DBEEFF;
+    --dark-blue: rgb(53, 79, 166);
+    --menu-text: #ffffff;
+    --menuitem: #ffffff;
+    --transition: .2s;
+    --text-shadow: 3px 8px 0px rgb(0 0 0 / 28%);
+    --fill: #FFFFFF;
+    --stroke: #FFFFFF;
+    --stroke-dark: #404040;
+    --fill-dark: #404040;
+    --primary-button: #1E88E5;
+    --secondary-button: #1E88E5;
+    --radius: 4px;
+    --source-color: #f5f5f5;
+    --kendo-button: #8095FF;
+    --task-table: #F7F9FA;
+    --task-info: #E8E8E8;
+    --chat-msg: #EBF6FF;
+    --sent-msg: #aee1ff;
+    --sent-msg2: #D2D2D2;
+    --type-text: #1E88E5;
+    --icon-color: invert(5%) sepia(16%) saturate(2%) hue-rotate(314deg) brightness(94%) contrast(96%);
+    --icon-color2: invert(5%) sepia(16%) saturate(2%) hue-rotate(314deg) brightness(94%) contrast(96%);
+    --main-icon: invert(16%) sepia(90%) saturate(7479%) hue-rotate(334deg) brightness(102%) contrast(104%);
+    --main-color: #FF005C;
+    --kendo-border: #B1BAD7;
+    --kendo-table: #f5f5f5;
+    --text: #15222C;
+    --background: #fff;
+    --kendoborder: #B1BAD7;
+    --kendo-selector-bg: #f5f5f5;
+    --kendo-selector-text: #404040;
+    --kendo-selector-border: #A8A8A8;
+    --kendo-selector-hover: #ebebeb;
+    --kendo-table-data: #F7F9FA;
+    --calendar-bg: #DDEDFB;
+    --calendar-text: #1E88E5;
+    --kendo-date-btn-bg: #f5f5f5;
+    --reportinfo-table-bg: #F7F9FA;
+    --reportinfo-table-color: #3E4457;
+    --reportinfo-table-color2: #3F53B7;
+    --dashboard-input: #ddedfb;
+    --block-input-img-hover: #96c5ee;
+    --block-input-img: rgb(0 0 0 / 29%);
+    --header-icon-color: #181818;
+}
+
+.fg-gray::before, .fg-gray::after {
+    color: var(--gray);
+}
+
+.fg-green::before, .fg-green::after {
+    color: var(--green);
+}
+
+.fg-pink::before, .fg-pink::after {
+    color: var(--red);
+}
+
+.fg-orange::before, .fg-orange::after {
+    color: var(--orange);
+}

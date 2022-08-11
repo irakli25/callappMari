@@ -1,0 +1,406 @@
+section[menu] {
+    grid-row: auto / span 2;
+    background-color: var(--dark-blue);
+    color: #fff;
+    box-sizing: border-box;
+    width: 60px;
+
+    /* MAKE GRID */
+    /* display: grid; */
+    /* grid-template-rows: 60px repeat(auto-fit,minmax(44px, max-content)); */
+    /* row-gap: 10px; */
+    overflow: hidden;
+    overflow-y: auto;
+    user-select: none;
+}
+
+
+section[menu]>menu>menuitem:focus {
+    outline: none;
+    background: #ffdd00;
+    /* gold */
+}
+
+section[menu] menu[active]>icon[svg] svg {
+    filter: invert(50%) sepia(69%) saturate(1233%) hue-rotate(184deg) brightness(100%) contrast(99%);
+}
+
+
+section[menu]>menu>menuitem:focus:not(:focus-visible) {
+    background: white;
+    /* undo gold */
+}
+
+section[menu]>menu {
+    background-repeat: no-repeat;
+    display: grid;
+    grid-auto-flow: column;
+    width: 300px;
+    grid-template-columns: 60px 1fr auto;
+    margin-bottom: 7px;
+}
+
+section[menu]>menu span>a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+section[menu]>menu span>a:hover {
+    color: #3AA2FD;
+}
+
+section[menu] menu>icon[svg]::before {
+    content: ''
+}
+
+section[menu] menu[active]>icon[svg]::before {
+    content: '';
+    width: 3px;
+    height: 44px;
+    background-color: #3AA2FD;
+    display: block;
+}
+
+section[menu] menu[active]>menuitem>span,
+section[menu] menu[active]>menuitem>span>a {
+    color: #3AA2FD
+}
+
+section[menu] menu>icon[svg] {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2px 1fr;
+    place-content: baseline;
+    place-items: center;
+    grid-template-rows: 44px;
+
+}
+
+section[menu] menu>icon[svg]>span[showtitle] {
+    position: absolute;
+    top: 0px;
+    padding: 25px;
+}
+
+section[menu] menu>icon[svg] svg {
+    stroke: #fff;
+    fill: none;
+    margin-left: -4px;
+}
+
+section[menu] menu[aria-open] icon[font] {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    display: grid;
+    place-content: center;
+    width: 50px;
+    height: 44px;
+    transition: var(--transition);
+    font-size: 13px;
+}
+
+section[menu] menu[aria-open] icon[font]:hover {
+    cursor: pointer;
+    color: #3AA2FD
+}
+
+section[menu] menu[active][aria-open] {
+    /* color: #3AA2FD */
+}
+
+section[menu] menu[aria-open=true]>icon[font]::before {
+    content: "\f077";
+}
+
+section[menu] menu[aria-open=false]>icon[font]::before {
+    content: "\f078";
+}
+
+
+section[menu] menu>menuitem {
+    font-family: 'BPG';
+    font-size: 13px;
+    margin-left: 2px;
+    /* transition: var(--transition); */
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    height: 44px;
+
+    /* CREATE GRID */
+    display: grid;
+    align-items: center;
+    grid-template-rows: 44px;
+    /* grid-row-gap: 15px; */
+    overflow-wrap: anywhere;
+}
+
+/* menu > menuitem submenu {
+    color: #fff
+} */
+
+section[menu]>menu>menuitem::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: rgba(58, 162, 253, 0.5);
+    position: absolute;
+    top: 55px;
+}
+
+
+section[menu] menuitem>menu>menuitem::before {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 55px;
+    border-color: rgba(58, 162, 253, 0.5);
+    border-width: 1px;
+    border-style: dashed;
+}
+
+section[menu] menuitem>menu[aria-open]::after {
+    width: 16px;
+}
+
+
+section[menu] menu>menuitem:hover menu icon {
+    background-size: 100px;
+}
+
+
+section[menu] submenu {
+    margin-left: 20px;
+    transition: var(--transition);
+}
+
+section[menu] submenu[active] > span > a {
+    color: #3AA2FD;
+}
+
+
+section[menu] menu>menuitem span:hover,
+section[menu] menu>menuitem span a:hover {
+    color: #3AA2FD;
+}
+
+
+section[menu] menu:hover>icon>svg,
+menu:hover>menuitem>span,
+section[menu] menu:hover>menuitem>span a {
+    color: #3AA2FD;
+    --fill: #3AA2FD;
+    --stroke: #3AA2FD;
+}
+
+
+section[menu] menu>menuitem span:hover,
+section[menu] menu>icon[svg]:hover {
+    cursor: pointer;
+}
+
+
+
+section[menu] menuitem>menu {
+    display: grid;
+    grid-auto-flow: column;
+    width: 171px;
+    grid-template-columns: 1fr auto;
+    margin-left: 17px;
+}
+
+div[class="profilemenuitems"] {
+    padding: 8px 0px
+}
+
+div[class="profilemenuitems"] a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: grid;
+    align-items: center;
+    padding: 9px 20px;
+    gap: 10px;
+    grid-auto-flow: column;
+    grid-template-columns: 20px;
+    position: relative;
+    --stroke: var(--text-color);
+    transition: 0.5s;
+}
+
+div[class="profilemenuitems"] a i {
+    font-size: 14px;
+    justify-self: center;
+}
+
+div[class="profilemenuitems"] a span {
+    font-family: 'BPG';
+    font-size: 12px;
+    width: 100%;
+}
+
+div[class="profilemenuitems"] a:hover {
+    color: var(--sky);
+    --stroke: var(--sky);
+}
+
+.fasrotate {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.icontrans {
+    transition: 0.3s;
+    color: var(--header-icon-color);
+}
+
+.switchspan {
+    background-color: #FD0A50;
+    padding: 0px 9px;
+    float: right;
+    height: 16px;
+    border-radius: 10px;
+    position: relative;
+    width: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.onoffspan {
+    padding: 6px;
+    background-color: white;
+    position: absolute;
+    border-radius: 10px;
+    left: 3px;
+    transition: 0.3s;
+}
+
+.switchspanchange {
+    background-color: #18F063;
+    transition: 0.3s;
+}
+
+.onoffspanchange {
+    left: 17px;
+    transition: 0.3s;
+}
+
+.onoffexit {
+    position: absolute;
+    right: 5px;
+    color: white;
+}
+
+.onoffaccept {
+    position: absolute;
+    left: 4px;
+    color: white;
+}
+
+.statussubmenu {
+    width: 190px;
+    position: absolute;
+    top: 31px;
+    right: 219px;
+    background-color: var(--block-bg-color);
+    border-radius: 5px;
+    margin-right: 0px;
+    font-size: 11px;
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.05));
+    display: none;
+}
+
+.callstatussubmenu {
+    width: 205px;
+    position: absolute;
+    top: 0px;
+    right: 228px;
+    background-color: var(--block-bg-color);
+    border-radius: 5px;
+    margin-right: 0px;
+    font-size: 11px;
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.05));
+    display: none;
+}
+
+.call_sub_menu {
+    transform: 1s;
+}
+
+.channelsubmenu {
+    width: 219px;
+    position: absolute;
+    top: 64px;
+    right: 219px;
+    background-color: var(--block-bg-color);
+    border-radius: 5px;
+    margin-right: 0px;
+    font-size: 11px;
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.05));
+    display: none;
+}
+
+
+/* 
+menu[active] > icon::before {
+    content: '';
+    width: 3px;
+    height: 44px;
+    background-color: #3AA2FD;
+    display: inline-block;
+    position: absolute;
+}
+menu[active] > menuitem > span {
+    color: #3AA2FD
+}
+menu > icon{
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-template-columns: 1fr;
+    height: 44px;
+} */
+
+
+/* menu span {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    grid-gap: 7px;
+    align-items: baseline;
+}
+
+menu span::before {
+    content: '492';
+    font-size: 10px;
+    background-color: whitesmoke;
+    border-radius: 2px;
+    color: black;
+    padding: 2px 3px;
+} */
+
+
+@media only screen and (max-width: 590px) {
+    section[menu] {
+        width: 0;
+    }
+
+    burgermenu {
+        position: absolute;
+        background: var(--white);
+        z-index: 1000;
+    }
+
+    burgerMenu > span {
+        background: var(--header-icon-color);
+    }
+
+    section[menu] > menu[page="dashboard"] {
+        margin-top: 60px;
+    }
+
+}

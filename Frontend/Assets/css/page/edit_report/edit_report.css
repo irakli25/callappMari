@@ -1,0 +1,22 @@
+section[Edit_report] {
+    min-width: 200px; 
+}
+
+editReport {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    background: var(--block-bg-color);
+    border-radius: 7px;
+}
+
+
+.editReport-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

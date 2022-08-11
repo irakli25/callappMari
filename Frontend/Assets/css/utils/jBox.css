@@ -1,0 +1,75 @@
+/* JBOX CUSTOM CSS  */
+
+.inception-overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.inception-modal button {
+  cursor: pointer;
+  border: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  color: #fff;
+  background: #000;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.jBox-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  background: var(--block-bg-color);
+  border-top: none
+}
+
+.jBox-footer button {
+  font-family: "BPG";
+  height: 30px;
+  font-size: 12px;
+}
+
+.jBox-Modal .jBox-container, .jBox-Modal.jBox-closeButton-box:before{
+    border: unset
+}
+
+.jBox-Modal .jBox-container .jBox-content {
+  background-color: var(--dashboard-bg-color)
+}
+.jBox-Modal .jBox-title {
+  font-size: 12px;
+  font-family: 'BPG2';
+}
+
+.alert-overlay {
+  background-color: #9c9c2e42;
+  backdrop-filter: brightness(0.6);
+}
+
+.alert-modal .jBox-title  {
+  padding: 8px;
+  background: #ca9431;
+  color: #fff;
+  text-align: center;
+}
+
+.alert-modal  .jBox-container .jBox-content {
+  background-color: beige;
+  padding: 10px 20px;
+  font-family: 'BPG2';
+    font-size: 12px;
+    color: chocolate;
+}
+
+.alert-modal .jBox-footer{
+  background: #f5f5dc;
+  
+}
+
+.alert-modal .jBox-footer button {
+  font-size: 12px;
+  background-color: chocolate;
+  height: 21px;
+}

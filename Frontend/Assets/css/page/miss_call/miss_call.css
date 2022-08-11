@@ -1,0 +1,20 @@
+section[Miss_call] {
+    background-color: var(--block-bg-color);
+    padding: 10px;
+    border-radius: 7px;
+    min-width: 200px;
+}
+
+missCall {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.missCall-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

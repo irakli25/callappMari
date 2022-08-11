@@ -1,0 +1,20 @@
+section[New_ivr] {
+    background-color: var(--block-bg-color);
+    padding: 10px;
+    border-radius: 7px;
+    min-width: 200px;
+}
+
+.ivr-div {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+newIvr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}

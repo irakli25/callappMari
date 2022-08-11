@@ -1,0 +1,7 @@
+section[ussd] .k-grid.k-grid-display-block {
+    max-width: calc(100vw - 100px);
+}
+
+section[ussd] .divfortable {
+    margin-top: -27px;
+}

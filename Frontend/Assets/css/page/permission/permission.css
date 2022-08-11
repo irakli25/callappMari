@@ -1,0 +1,252 @@
+section[permission] {
+    background: var(--block-bg-color);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+
+#data-title {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #404040;
+}
+
+.header-block {
+    background: var(--block-bg-color);
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 21px;
+}
+
+.group-block, .header-block, .modal-content {
+    background: var(--block-bg-color);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.header-content {
+    background: var(--block-bg-color);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+permissionDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 300px;
+}
+
+.permission-plus {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background: url("../../../images/icons/plus-circle.svg") no-repeat;
+    background-position: center;
+}
+
+.permission-minus {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background: url("../../../images/icons/circle123.svg") no-repeat;
+    background-position: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+permissionMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+iconDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+    padding-right: 50px;
+}
+
+.permission-edit, 
+.permission-delete {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.group-title {
+    font-family: "BPG";
+    font-weight: normal;
+    font-size: 15px;
+    color: #1E88E5;
+}
+
+.group-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.permission-input {
+    background-color: var(--dashboard-input);
+    border: 0;
+    border-radius: 27px;
+    height: 25px;
+    box-sizing: border-box;
+    padding: 2px 44px 2px 10px;
+    width: 100%;
+}
+
+.permission-input::placeholder {
+    font-family: "BPG2";
+    font-size: 10px;
+    color: rgba(64, 64, 64, 0.5);
+}
+
+.input-block {
+    width: 341px;
+    position: relative;
+}
+
+.input-block::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f002";
+    font-size: 14px;
+    color: var(--block-input-img);
+    position: absolute;
+    padding: 8px;
+    border: 5px solid var(--block-bg-color);
+    background: var(--dashboard-input);
+    border-radius: 50%;
+    cursor: pointer;
+    left: 305px;
+    top: -9px;
+}
+
+.data-block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.permissions {
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.permissions:hover {
+    background: #c9e6ff;
+}
+
+.permissionIcon {
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9ED2FF;
+    transition: all 0.3s ease-in-out;
+}
+
+.permissionIcon[data-status=true]{
+    background: #1E88E5;
+}
+
+.permissionIcon[data-status=false]{
+    background: #ffffff;
+}
+
+.permissionIcon:hover{
+    filter: brightness(85%);
+}
+
+.permissionIcon > icon {
+    width: 15px;
+    height: 15px;
+    padding: 6px;
+}
+.permissionIcon[data-status=true] > icon {
+    stroke: white;
+}
+.permissionIcon[data-status=false] > icon {
+    stroke: #1E88E5;
+}
+
+
+
+.permissions-submenu {
+    display:none;
+    margin-top: 15px;
+    margin-left: 15px; 
+    padding: 5px; 
+    margin-right: -5px; 
+}
+
+
+.permission-plus-disabled {
+    filter: grayscale(100%);
+}
+
+.permission-title {
+    width: 137px;
+    font-family: "BPG";
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: #1E88E5;
+    cursor: pointer;
+    height: 29px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #9ED2FF;
+    user-select: none;
+}
+
+/* .permission-title[type="see"] {
+    background-position-x: 85px;
+    background-position-y: 9px;
+} */
+
+.permission-title[data-status="false"] {
+    color: #1E88E5;
+    background: #fff;
+
+}
+
+.permission-title[data-status="true"] svg {
+    stroke: #fff;
+}
+.permission-title[data-status="false"] svg {
+    stroke: #1E88E5;
+}
+
+icondiv div[type="delete"] > icon > svg,
+icondiv div[type="add"] > icon > svg {
+    margin-left: -1px;
+}
+

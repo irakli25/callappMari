@@ -1,0 +1,142 @@
+
+/* CONTENT */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 100vh;
+    grid-template-rows: auto 1fr;
+}
+
+
+html, body{
+    background-color: var(--dashboard-bg-color);
+    color: var(--text-color);
+}
+
+
+section[content]{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+}
+
+section[content] section {
+    margin: 10px;
+}
+
+input:focus, input:active, textarea:focus, textarea:active, editor:focus, editor:active{
+    outline: none;
+}
+
+
+*[draggable="true"]::before{
+    cursor: move;
+}
+
+*[draggable="true"].dragging {
+    opacity: .6;
+}
+
+
+/* SCROLLBAR */
+
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* *::-webkit-scrollbar-track {
+    background: var(--block-bg-color);
+} */
+
+*::-webkit-scrollbar-thumb {
+    background-color: #9393935c;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+body::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track-piece {
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    background-color: var(--dashboard-bg-color);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--block-bg-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #292e388f;
+    border-radius: 20px;
+}
+
+
+section[menu]::-webkit-scrollbar {
+    width: 8px;
+}
+
+section[menu]::-webkit-scrollbar-track {
+    background: var(--block-bg-color);
+}
+
+section[menu]::-webkit-scrollbar-thumb {
+    background-color: #929292;
+    border-radius: 20px;
+}
+
+
+
+.mediPlayer .control {
+    opacity        : 0; /* transition: opacity .2s linear; */
+    pointer-events : none;
+    cursor         : pointer;
+}
+
+.mediPlayer .not-started .play, .mediPlayer .paused .play {
+    opacity : 1;
+
+}
+
+.mediPlayer .playing .pause {
+    opacity : 1;
+
+}
+
+.mediPlayer .playing .play {
+    opacity : 0;
+}
+
+.mediPlayer .ended .stop {
+    opacity        : 1;
+    pointer-events : none;
+}
+
+.mediPlayer .precache-bar .done {
+    opacity : 0;
+}
+
+.mediPlayer .not-started .progress-bar, .mediPlayer .ended .progress-bar {
+    display : none;
+}
+
+.mediPlayer .ended .progress-track {
+    stroke-opacity : 1;
+}
+
+.mediPlayer .progress-bar,
+.mediPlayer .precache-bar {
+    transition        : stroke-dashoffset 500ms;
+
+    stroke-dasharray  : 298.1371428256714;
+    stroke-dashoffset : 298.1371428256714;
+}

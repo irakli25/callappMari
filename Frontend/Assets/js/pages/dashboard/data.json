@@ -1,0 +1,265 @@
+[
+  [
+    {
+      type: "count",
+      label: {
+        text: "C",
+        color: "#f55555"
+      },
+      title: "ოპერატორები",
+      boxSize: 1,
+      draggable: true,
+      filter: false,
+      search: false,
+      header: ["შემოსული", "თავისუფალი", "საუბრობს", "შესვენებაზე"],
+      colors: ["#444444", "#02BB62", "#FF005C", "#FEB019"],
+      data: [12, 2, 5, 6]
+    },
+    {
+      type: "donut",
+      id: "donut",
+      title: "ზარები",
+      boxSize: 2,
+      draggable: true,
+      filter: true,
+      header: ["ნაპასუხები", "უპასუხო"],
+      colors: ['#02BB62', '#FF005C'],
+      data: [977, 429]
+    }
+  ],
+  {
+    type: "list",
+    id: "list",
+    label: {
+      text: "SL",
+      color: "#AD00FF"
+    },
+    chart: "gauge",
+    title: "მომსახურების დონე",
+    boxSize: 3,
+    draggable: true,
+    filter: false,
+    header: ["Phone", "Chat", "Messenger", "Mail", "Viber", "CrystalBet"],
+    labelData: ["100/200", "200/200", "300/300", "100/600", "10/50", "293/3453"],
+    colors: ["#AD00FF"],
+    data: [60],
+    dataTitle: ["30წმ"],
+    footer: {
+      show: true,
+      stack: {
+        label: "up",
+        percent: "25%"
+      },
+      toggle: false
+    }
+  },
+  {
+    type: "list",
+    id: "list",
+    label: {
+      text: "ASA",
+      color: "#289BFF"
+    },
+    draggable: true,
+    chart: "count",
+    title: "პასუხის საშუალო სიჩქარე",
+    boxSize: 3,
+    header: ["Phone", "Chat", "Messenger", "Mail", "Viber", "CrystalBet"],
+    labelData: ["00:20", "15:20", "--:--", "--:--", "--:--", "--:--"],
+    data: ["01:12"]
+  },
+  {
+    type: "list",
+    chart: "radialbar",
+    title: "მომართვები დღეს",
+    boxSize: 3,
+    draggable: true,
+    filter: false,
+    header: ["Phone", "Messenger", "Facebook", "Instagram", "Viber", "Whatsapp", "Chat", "Skype", "Mail", "VideoCall"],
+    labelData: ["10000", "200", "300", "100", "10", "293", "293", "293", "293", "293"],
+    labelStack: [
+      {
+        label: "up",
+        percent: "25%"
+      },
+      {
+        label: "up",
+        percent: "25%"
+      },
+      {
+        label: "down",
+        percent: "25%"
+      },
+      {
+        label: "up",
+        percent: "25%"
+      },
+      {
+        label: "up",
+        percent: "25%"
+      },
+      {
+        label: "down",
+        percent: "25%"
+      },
+
+      {
+        label: "up",
+        percent: "25%"
+      },
+      {
+        label: "up",
+        percent: "25%"
+      },
+      {
+        label: "down",
+        percent: "25%"
+      },
+      {
+        label: "up",
+        percent: "25%"
+      },
+    ],
+    colors: ["#3ABE82", "#2196F3", "#FF005C", "#FBD300", "#1BD741", "#BA34B4", "#1976D2", "#FBD300", "#FF005C"],
+    data: [88, 77, 66, 55, 44, 33, 22, 11],
+    dataTitle: ["Phone", "Messenger", "Facebook", "Instagram", "Viber", "Whatsapp", "Chat", "Skype", "Mail", "VideoCall"]
+   
+  },
+  {
+    type: "table-icon",
+    title: "მონიტორინგი",
+    boxSize: 3,
+    draggable: true,
+    search: true,
+    filter: true,
+    colors: ["#3ABE82", "#FA5993", "#2196F3", "#FF005C", "#8E24AA", "#FBD300"],
+    header: ["Phone", "Chat", "Messenger", "Mail", "Viber", "CrystalBet"],
+    data: [
+      ["ქრისტინა კაჭარავა", "ცოტნე გუგუშვილი", "ნინი კაცაძე", "ნინი კაცაძე", "ოთო კიკვიძე", "თორნიკე ერისთავი"],
+      [15, 10, 10, 12, 14, 15],
+      [15, 10, 10, 55, 33, 31],
+      [15, 10, 10, 55, 33, 31],
+      [15, 10, 10, 55, 33, 31],
+      [15, 10, 10, 55, 33, 31],
+      [15, 10, 10, 55, 33, 31]
+    ],
+    footer: {
+      show: true,
+      stack: {
+        label: "up",
+        percent: "25%"
+      },
+      toggle: true
+    }
+  },
+  {
+      type: "table",
+      title: "მონიტორინგი / პრობლემური",
+      boxSize: 3,
+      draggable: true,
+      search: true,
+      filter: false,
+      colors: ["#AD00FF", "#008FFB", "#4A4A4A"],
+      header: ["შესამოწმ.", "შემოწმ.", "შეფასება"],
+      data: [
+        ["ქრისტინა კაჭარავა", "ცოტნე გუგუშვილი", "ნინი კაცაძე", "ნინი კაცაძე", "ოთო კიკვიძე", "თორნიკე ერისთავი", "გიორგი შალამბერიძე"],
+        [15, 10, 10, 23, 56, 23, 55],
+        [15, 10, 10, 23, 56, 23, 55],
+        [15, 10, 10, 23, 56, 23, 55]
+      ],
+      footer: {
+        show: true,
+        stack: {
+          label: "up",
+          percent: "25%"
+        },
+        toggle: true
+      }
+  },
+  {
+      type: "table",
+      title: "საუბრის ხანგრძლივობა / ოპერატორები",
+      boxSize: 3,
+      draggable: true,
+      search: true,
+      filter: false,
+      colors: ["#02BB62", "#FFA903", "#FF005C"],
+      header: ["პატარა", "საშუალო", "დიდი"],
+      data: [
+      ["ქრისტინა კაჭარავა", "ცოტნე გუგუშვილი", "ნინი კაცაძე"],
+      [15, 10, 10],
+      [15, 10, 10],
+      [15, 10, 10]
+      ],
+  },
+  {
+      type: "rig",
+      title: "რიგი",
+      boxSize: 3,
+      draggable: true,
+      search: false,
+      filter: false,
+      colors: ["#3ABE82", "#FA5993", "#2196F3", "#FF005C", "#8E24AA", "#FBD300"],
+      header: ['ოპერატორი', "აყვანილი", "რიგი"],
+      data: [
+          ["Phone", "Chat", "Messenger", "Mail", "Viber", "CrystalBet"],
+          [15, 10, 10, 22, 11, 33],
+          [15, 10, 10, 22, 44, 21],
+          [15, 10, 10, 22, 34, 23]
+      ]
+  },
+  {
+    type: "table",
+    title: "მონიტორინგი",
+    boxSize: 3,
+    draggable: true,
+    search: true,
+    filter: true,
+    colors: ["#AD00FF", "#008FFB"],
+    header: ["შესამოწმებელი", "შემოწმებული"],
+    data: [
+      ["ქრისტინა კაჭარავა", "ცოტნე გუგუშვილი", "ნინი კაცაძე", "ნინი კაცაძე", "ოთო კიკვიძე", "თორნიკე ერისთავი"],
+      [15, 10, 10, 12, 14, 15],
+      [15, 10, 10, 55, 33, 31]
+    ]
+},
+{
+  type: "bar",
+  title: "უპასუხო ზარები",
+  boxSize: 3,
+  draggable: true,
+  filter: true,
+  options: {
+    height: 230,
+    columnWidth: '45%'
+  },
+  colors: ['#02BB62', '#FFA903', '#FF005C'],
+  data: {    
+    "მოკლე": 21,
+    "საშუალო": 22, 
+    "დიდი": 10,
+    "ალექსი": 70,
+    "ჭიჭი": 20
+  }
+},
+{
+  type: "bar",
+  id: "chart",
+  title: "საუბრის ხანგრძლივობა",
+  boxSize: 3,
+  draggable: true,
+  filter: true,
+  options: {
+    height: 230,
+    columnWidth: '45%'
+  },
+  colors: ['#AD00FF', '#02BB62', '#FFA903', '#FF005C'],
+  data: {    
+    "მოკლე": 99,
+    "საშუალო": 22, 
+    "დიდი": 10,
+    "ალექსი": 70,
+    "ჭიჭი": 20
+  }
+}
+]

@@ -1,0 +1,190 @@
+.hide-element {
+    display: none
+}
+.max-content {
+    height: max-content !important;
+}
+
+
+button {
+  height: 35px;
+  background-color: var(--primary-button);
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 3px;
+  border: none;
+  font-family: 'BPG';
+  font-size: 12px;
+}
+
+
+button:hover {
+  cursor: pointer;
+  background-color: #0874D3;
+}
+
+button[save]{
+
+  order: 2
+  
+}
+
+button[cancel]{
+
+  order: 1;
+  background-color: transparent;
+  border: 1px solid #636262;
+  color: #636262;
+
+}
+button[cancel]:hover {
+  background: transparent;
+  border: 1px solid #FD0A50;
+  color: #FD0A50;
+}
+
+button[disabled] {
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button[disabled]:hover{
+  background-color: #ddd;
+}
+
+
+button:active{
+  background-color: #0b61ac;
+}
+
+div[fieldset] {    
+  padding: 53px 10px 10px;
+  background-color: var(--block-bg-color);
+  border: none;
+  border-radius: 7px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+div[fieldset]::before {
+  content: attr(title) attr(data-title);
+  position: absolute;
+  margin: 10px;
+  font-size: 15px;
+  font-family: 'BPG';
+  color: #1E88E5;
+  top: 0;
+  left: 0
+}
+
+.transform180 {
+  transform: rotate(180deg);
+}
+
+file{
+  display: flex;
+  gap: 5px;
+}
+
+file span,file deletespan{
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.153);
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 12px;
+    font-family: 'BPG';
+    transition: 0.3s;
+}
+
+file span:hover{
+ color: var(--primary-button);
+ border: 1px solid var(--primary-button);
+}
+
+file deletespan:hover{
+  color:rgb(209, 0, 0);
+  border: 1px solid rgb(209, 0, 0);
+ }
+
+button > .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+button[type="add"] {
+  height: 35px;
+  background-color: var(--primary-button);
+  color: #fff;
+  padding: 0 12px;
+  border-radius: 3px;
+  border: none;
+  font-family: 'BPG';
+  font-size: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button[type="add"]:hover {
+  background-color: #0874D3;
+}
+
+button[type="delete"] {
+  height: 35px;
+  background-color: #FD0A50;
+  color: #fff;
+  padding: 0 12px;
+  border-radius: 3px;
+  border: none;
+  font-family: 'BPG';
+  font-size: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button[type="delete"]:hover {
+  background-color: #e20040;
+}
+
+button[type="archive"] {
+  height: 35px;
+  background-color: #EFA311;
+  color: #fff;
+  padding: 0 12px;
+  border-radius: 3px;
+  border: none;
+  font-family: 'BPG';
+  font-size: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button[type="archive"]:hover {
+  background-color: #db9410;
+}
+
+
+.ui-autocomplete {
+  z-index: 99999999
+}
+
+
+.hasDatepicker {
+  height: 35px;
+  padding: 10px;
+  border: 1px solid #0874D3;
+  color : #0874D3;
+  border-radius: 4px ;
+  box-sizing: border-box;
+}

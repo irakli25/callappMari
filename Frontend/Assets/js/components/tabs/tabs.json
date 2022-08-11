@@ -1,0 +1,22 @@
+[
+       {
+          "text":"უშინაარსო ტექსტი",
+          "content_id": "text"
+       },
+       {
+          "text":"საბეჭდი",
+          "content_id": "print"
+       },
+       {
+          "text":"განსაკუთრებული",
+          "content_id": "special"
+       },
+       {
+        "text":"სხვადასხვა ვერსიები იყო ჩაშენებული",
+        "content_id": "build"
+       },
+       {
+        "text":"შეცდომის გამო",
+        "content_id": "error"
+        }
+    ]

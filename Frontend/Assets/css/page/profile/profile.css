@@ -1,0 +1,518 @@
+@import "../../fonts/fonts.css";
+
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+section[content] {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+}
+
+section[profile] {
+    min-width: 200px;
+}
+
+.card {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    background: var(--white);
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.card > img {
+    width: 168px;
+    height: 168px;
+}
+
+.card > div {
+    line-height: 40px;
+}
+
+.card > div > h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-family: "BPG";
+    font-size: 20px;
+    color: var(--text);
+}
+
+.userworkplace {
+    font-family: "BPG";
+    font-size: 12px;
+    color: var(--pink);
+}
+
+.card > div > .rating {
+    font-style: normal;
+    font-weight: normal;
+    font-family: "BPG";
+    font-size: 20px;
+    color: var(--text);
+}
+
+.card > div > p > img {
+    margin-left: 3px;
+}
+
+.place {
+    font-family: "BPG";
+    font-size: 12px;
+    color: #989898;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    gap: 5px;
+}
+
+.place-input {
+    font-family: "BPG";
+    font-size: 12px;
+    color: #989898;
+    width: 180px;
+    border: none;
+    background: var(--white);
+    cursor: auto;
+    border-radius: 2px;
+    display: flex;
+    justify-content: left;
+    flex-direction: row-reverse;
+    gap: 5px;
+    font-weight: normal;
+    background: url("../../../images/icons/mappin.svg");
+    background-repeat: no-repeat;
+    background-position-y: 6px;
+    background-position-x: 1px;
+    padding-left: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.place img {
+    height: 12px;
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex-wrap: wrap;
+    float: right;
+    margin-left: auto;
+    min-width: 50px;
+}
+
+@media screen and (max-width: 689px) {
+    .socialmedia {
+        flex-direction: row;
+        gap: 8px;
+    } 
+}
+
+.socialmedia > a {
+    cursor: default;
+}
+
+.socialmedia > a > img {
+    cursor: pointer;
+}
+
+.table-card {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 42px;
+    grid-template-columns: auto auto auto 1fr;
+    margin-top: 10px;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 7px 7px 0 0;
+}
+
+.table-card > div > p {
+    display: flex;
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.table-card > div > p > img {
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+
+.main {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+    background: url("../../../images/icons/user1.svg") no-repeat right;
+}
+
+
+.user-info,
+.calendar-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 90px;
+    padding: 15px;
+    background: var(--white);
+    border-radius: 0 0 7px 7px;
+}
+
+.user-info > div {
+    line-height: 30px;
+}
+
+.pen {
+    cursor: pointer;
+    filter: var(--icon-color);
+}
+
+.arrow {
+    cursor: pointer;
+    filter: invert(100%);
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 33px;
+}
+
+.main-title {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--text);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 4px;
+}
+
+.workingplace {
+    font-family: "BPG";
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 8px;
+    font-size: 15px;
+    border: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 100%;
+    color: var(--text);
+    cursor: auto;
+    border-radius: 2px;
+    background: var(--white);
+}
+
+
+
+.user-info > div > .container  > .left > p {
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: var(--text);
+    cursor: default;
+}
+
+.user-info > div > .container > .left > p > img {
+    margin-right: 10px;
+    height: 14px;
+}
+
+.phone,
+.mail {
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #289BFF;
+    background: var(--white);
+    border: none;
+    cursor: auto;
+}
+.right {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 6px;
+}
+
+.adress,
+.birthday,
+.sex,
+.language,
+.company,
+.responsible,
+.department {
+    font-family: "BPG2";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    border: none;
+    background: var(--white);
+    color: var(--text);
+    cursor: default;
+}
+
+.calendartable {
+    display: none;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 0 0 7px 7px;
+}
+
+
+@media screen and (max-width: 1020px) {
+    .calendartable {
+        height: 1350px;
+    }
+}
+
+.calendartable > .calendar-grid-container {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+}
+
+
+.box-container > .box {
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 20px;    
+    max-width: 400px;
+    height: 500px;
+    position: absolute;
+}
+
+.box-container > .box > div {
+    padding: 15px;
+}
+
+.box-container > .box > div > .box-border-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto 82px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box-container > .box > div > .box-border-grid > .box-border {
+    margin-top: 5px;
+    width: 95%;
+    border-bottom: 1px solid #FD0A50;
+    margin-bottom: 12px;
+}
+
+.box-container > .box > div > .box-grid {
+    display: grid;
+    grid-auto-flow: column;
+    background: var(--task-info);
+    padding:5px; 
+    border-radius: 4px; 
+    margin-top:10px;
+}
+
+.box-container > .box > div > .box-grid > .box-square {
+    position: absolute;
+    width: 10px; 
+    height: 10px; 
+    margin-top: 4px; 
+    margin-left: 7px; 
+    background: #048045;
+}
+
+.box-container > .box > div > .box-grid > .box-p {
+    font-family: "BPG2"; 
+    font-style: normal; 
+    font-weight: normal; 
+    font-size: 12px; 
+    color: var(--text-color);
+    margin-left: 25px;
+}
+
+.box-container > .box > div > .box-grid > .box-p-time {
+    margin-left: 150px;
+    font-family: 'BPG2'; 
+    font-style: normal;
+    font-weight: normal; 
+    font-size: 12px; 
+    color: var(--text-color);
+}
+
+.box-container > .box > div > .box-border-grid > .box-task-title {
+    width: 75px;
+    height: 26px;
+    color: #fff;
+    background: #FD0A50;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.calendartable > .calendar-grid-container > .calendarcontainer {
+    margin-top: 20px;
+    height: 630px;
+    max-width: 1250px;
+}
+
+#js-cal *, #v-cal *:before, #v-cal *:after {
+    box-sizing: border-box;
+}
+  
+#js-cal {
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+  
+.calendartable > .calendar-grid-container > .calendarcontainer > .cal-btn {
+    background: none;
+    border: 0;
+    height: 33px;
+    cursor: pointer;
+    min-width: 27px;
+    outline: none;
+    overflow: visible;
+    padding: 0 16px;
+    text-align: center;
+}
+  
+.calendartable > .calendar-grid-container > .calendarcontainer > .cal-header {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+  
+.calendartable > .calendar-grid-container > .calendarcontainer  > .cal-header > p {
+    fill: #1e88e5;
+}
+  
+.calendartable > .calendar-grid-container > .calendarcontainer > .cal-header > .cal-header-label {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text);
+}
+  
+#js-cal .cal-week {
+    background: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+#js-cal .cal-week span {
+    flex-direction: column;
+    flex: 0 0 14.28%;
+    max-width: 14.28%;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    display: flex;
+    color: var(--text);
+}
+  
+#js-cal .cal-body {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--white);
+}
+  
+#js-cal .cal-date {
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 14.28%;
+    max-width: 14.28%;
+    padding: 2.4rem 1.0rem;
+    border: 1px solid var(--text);
+
+}
+  
+#js-cal .cal-date--active {
+    cursor: pointer;
+}
+
+#js-cal .cal-date--today {
+    background-color: #048145;
+    color: #fff;
+}
+  
+#js-cal .cal-date--selected {
+    background-color: #a4c9b7;
+}
+  
+#js-cal .cal-date--disabled {
+    border-radius: 0;
+    cursor: not-allowed;
+}
+
+.calendartable > .calendar-grid-container > .calendarcontainer > .date-picked {
+    margin-top: 20px;
+}
+
+
+.k-grid.k-grid-display-block {
+    margin-top: 0;
+}
+
+taskTabs {
+    border-radius: 0;
+    padding-top: 8px;
+}
+
+tasktabs > tab {
+    line-height: 38px;
+    transition: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 5px;
+    color: rgb(12, 12, 12);
+}
+
+tasktabs > tab:hover {
+    color: var(--main-color);
+    filter:  invert(22%) sepia(97%) saturate(5844%) hue-rotate(334deg) brightness(97%) contrast(105%);
+}
+
+tasktabs > .active {
+    color: var(--main-color);
+    border-bottom: 1px solid #fd0a50;
+}
+
+tasktabs > .active > img {
+    filter:  invert(22%) sepia(97%) saturate(5844%) hue-rotate(334deg) brightness(97%) contrast(105%);
+}

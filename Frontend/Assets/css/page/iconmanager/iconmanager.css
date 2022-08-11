@@ -1,0 +1,17 @@
+section[iconmanager] {
+    min-width: 200px;
+}
+
+.btn {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+
+.creatediv {
+    background: var(--block-bg-color);
+    padding: 20px;
+    border-radius: 7px;
+}
+
+

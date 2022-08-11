@@ -1,0 +1,22 @@
+section[Reports_time_sort] {
+    min-width: 200px; 
+    padding: 10px;
+    margin-top: 10px;
+    background: var(--block-bg-color);
+    border-radius: 7px;
+}
+
+timeSort {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.timeSort-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

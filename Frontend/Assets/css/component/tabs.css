@@ -1,0 +1,46 @@
+:root {
+    --tabs-background-color: #FFFFFF;
+    --tabs-color: #355376;
+    --tabs-active: #269FFF;
+}
+
+tabs  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-column-gap: 79px;
+    width: 100%;
+    background-color: var(--block-bg-color);
+    border-radius:8px 8px 0 0;
+    margin-bottom: 10px;
+}
+
+tabitem {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 20px 10px 10px 10px;
+    font-family: BPG Banner Caps;
+    font-size: 15px;
+    line-height: 18px;
+    color: #355376;
+    cursor:pointer;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+
+tabitem[active] {
+    color:var(--tabs-active);
+    border-bottom: 2px solid var(--tabs-active);
+}
+
+tabitem:hover {
+    color:var(--tabs-active);
+    border-bottom: 2px solid var(--tabs-active);
+}
+
+tabscontent{
+    display: none;
+    background-color: var(--block-bg-color);
+    margin-top: 10px;
+    padding: 20px;
+}

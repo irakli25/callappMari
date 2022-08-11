@@ -1,0 +1,104 @@
+field>input {
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 2px 10px;
+    font-family: 'BPG2';
+    font-size: 12px;
+    height: 30px;
+    background-color: var(--block-bg-color);
+    color: var(--text-color);
+    border-color: revert;
+}
+
+field>input:focus {
+    border-color: #1E88E5;
+    color: var(--text-color);
+}
+
+field {
+    position: relative;
+    color: var(--text-color);
+}
+
+field:empty::after {
+    visibility: hidden;
+}
+
+field::after {
+    content: attr(title);
+    position: absolute;
+    left: 10px;
+    top: -7px;
+    font-family: 'BPG';
+    font-size: 11px;
+    background-color: var(--block-bg-color);
+    padding: 0 6px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+field:focus-within::after{
+    color: #1E88E5;
+}
+  
+textarea {
+    width: 100%;
+    min-height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 4px;
+    padding: 10px;
+    font-family: 'BPG2';
+    font-size: 12px;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+textarea:focus {
+    border-color: #1E88E5;
+    color: var(--text-color);
+}
+
+searcharea {
+    transition: 0.3s;
+}
+
+searcharea:hover {
+    background-color: var(--sky);
+}
+
+searcharea:hover>svg {
+    stroke: #fff;
+    fill: #fff;
+    filter: brightness(10);
+}
+
+.selectize-control{
+    position: unset;
+    z-index: unset;
+    width: 9vw;
+    min-width: 150px;
+}
+
+.selectize-input{
+    position: unset;
+    z-index: unset;
+    box-shadow: unset;
+    border: 1px solid;
+    border-radius: 4px;
+    font-family: 'BPG2';
+    font-size: 12px;
+    background-color: var(--block-bg-color);
+    color: var(--text-color);
+    border-color: revert;
+}
+
+.selectize-input.focus{
+    box-shadow: unset;
+    border-color: #1E88E5;
+    color: var(--text-color);
+}
+
+.selectize-control.multi .selectize-input.has-items{
+    height: 36px;
+    overflow: auto;
+}

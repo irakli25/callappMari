@@ -1,0 +1,3 @@
+.apexcharts-tooltip-series-group.apexcharts-active, .apexcharts-tooltip-series-group:last-child {
+    padding-bottom: 0;
+}
